@@ -13,11 +13,10 @@ int main(void)
     puts("throw");
     throw(AbcException);
     puts("じっこうしてほしくない");
-  } catch (AbcException, e) {
+  } catch(AbcException, e) {
     printf("catch Exception:%s\n", e);
   } finally {
     puts("finally");
-    exit(EXIT_FAILURE);
   } end;
 
   printf("EXIT\n");
